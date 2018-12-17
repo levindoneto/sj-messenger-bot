@@ -1,0 +1,1209 @@
+{
+  "tags": [
+    {
+      "tag": "GET_STARTED",
+      "patterns": [
+        "GET_STARTED"
+      ],
+      "callback": {
+        "name": "Olá, @name! Estamos super felizes de conversar com você, em que podemos ajudar? :)",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://otoneuro.weenvoyer.com/#/register?id={facebookId}",
+            "text": "Cadastrar usuário"
+          },
+          {
+            "type": "web_url",
+            "url": "https://www.facebook.com/clinicaotoneuro/",
+            "text": "Curtir nossa página"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "tinnitusContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ATENDIMENTO",
+      "patterns": [
+        "Qual o horário de atendimento?",
+        "qual é horário",
+        "qual horário",
+        "quais horários",
+        "que horas abre",
+        "está aberto",
+        "está funcionando",
+        "horas",
+        "horário",
+        "aberto",
+        "estão trabalhando",
+        "CUSTOMER_SERVICE_PAYLOAD",
+        "Atendimento"
+      ],
+      "responses": [
+        "@name, Estamos abertos de segunda a sexta, das 8 às 18 horas ⏰. Para agendar um exame, você pode entrar em contato pelos nossos canais de atendimento :)",
+        "Estamos abertos de segunda a sexta das 8 às 18 horas @name, estamos esperando você :)",
+        "De segunda a sexta, das 8 às 18 horas, estamos prontos para receber você. Marque um exame pelos nossos canais de atendimento 😄"
+      ],
+      "context": {
+        "contextSet": [
+          "customerServiceContext"
+        ],
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ATENDIMENTO_INDO",
+      "patterns": [
+        "to indo",
+        "estou indo",
+        "to chegando",
+        "estou chegando",
+        "vou ir",
+        "posso ir",
+        "vou chegar"
+      ],
+      "responses": [
+        "@name, melhor ligar no nosso telefone (51) 3527-3873 antes :)"
+      ],
+      "context": {
+        "contextSet": [
+          "#nocontext"
+        ],
+        "contextFilter": [
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ATENDIMENTO_AGENDAR",
+      "patterns": [
+        "agendar",
+        "agendamento",
+        "ajendar",
+        "ajenda",
+        "ajendamento",
+        "marcar",
+        "marca",
+        "marcá",
+        "markar",
+        "marka"
+      ],
+      "responses": [
+        "@name, pode nos ligar no telefone (51) 3527-3873️ ☎ e agendar sua consulta :)"
+      ],
+      "context": {
+        "contextSet": [
+          "#nocontext"
+        ],
+        "contextFilter": [
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "CONTATO",
+      "patterns": [
+        "qual telefone",
+        "celular",
+        "email",
+        "contato",
+        "rede social",
+        "facebook",
+        "whatsapp",
+        "telegram",
+        "Messenger",
+        "e-mail"
+      ],
+      "responses": [
+        "☎ (51) 3527-3873️\n📧 atendimento@otoneuroclinica.com️\n💬 @clinicaotoneuro\n💬 (51) 99399-7889\n🖥 www.otoneuroclinica.com",
+        "Você pode nos encontrar no telefone (51) 3527-3873, WhatsApp (51) 99399-7889 no e-mail atendimento@otoneuroclinica.com ou em nossas redes sociais :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ENDEREÇO",
+      "patterns": [
+        "onde fica",
+        "onde é",
+        "como chegar",
+        "localização",
+        "loja",
+        "escritório",
+        "endereço",
+        "como chego",
+        "fica onde",
+        "Perto de onde",
+        "Clínica",
+        "Clinica",
+        "mapa",
+        "distância",
+        "LOCALIZATION_PAYLOAD"
+      ],
+      "responses": [
+        "Ficamos na rua Gomes Portinho, 714, Centro, Novo Hamburgo 🏡, próximo a Mauricio Cardoso 😄"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "EXAMES",
+      "patterns": [
+        "exams",
+        "exames",
+        "tests",
+        "teste",
+        "testes"
+      ],
+      "responses": [
+        "@name, temos os seguintes serviços:\n• Exames audiológicos\n• Exames otoneurológicos\n• Terapia"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "PRODUTOS_E_SERVICOS",
+      "patterns": [
+        "SERVICES_PAYLOAD",
+        "services",
+        "produtos",
+        "serviços",
+        "serviço",
+        "produto",
+        "o que vcs tem",
+        "o que voces tem",
+        "o que você tem",
+        "o que tem",
+        "o que têm"
+      ],
+      "callback": {
+        "type": "CAROUSEL_BUTTONS",
+        "carouselItems": [
+          {
+            "title": "Exames",
+            "subtitle": "Audiometria tonal, audiometria vocal, imitânciometria, valiação do processamento auditivo central, vectoeletronistagmografia, potencial evocado auditivo de tronco encefálico, etc",
+            "imageUrl": "https://image.ibb.co/ePhQPz/oto_Exames.png",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "http://www.otoneuroclinica.com/clinica-otoneuro/exames/",
+                "title": "Acesse"
+              }
+            ]
+          },
+          {
+            "title": "Testes",
+            "subtitle": "Venha fazer um teste na Clínica que possui todos os recursos em um só lugar.",
+            "imageUrl": "https://image.ibb.co/ejowxK/oto_testes.png",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "http://www.otoneuroclinica.com/testes/",
+                "title": "Acesse"
+              }
+            ]
+          },
+          {
+            "title": "Produtos",
+            "subtitle": "Para a Visão – Quando alguém percebe que esta com dificuldade de ler, procura um profissional e não tem nenhuma dificuldade em usar um par de óculos.",
+            "imageUrl": "https://image.ibb.co/fxZN4z/oto_produtos.png",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "http://www.otoneuroclinica.com/aparelhos/",
+                "title": "Acesse"
+              }
+            ]
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "SINTOMAS",
+      "patterns": [
+        "SYMPTOMS_PAYLOAD"
+      ],
+      "responses": [
+        "O que você está sentindo, @name? 🤒",
+        "@name, que sintomas você têm? :/"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ],
+        "contextSet": [
+          "symptomsContext"
+        ]
+      }
+    },
+    {
+      "tag": "SINTOMAS_TEXTO",
+      "patterns": [
+        "sintomas",
+        "doente",
+        "sentindo",
+        "sintoma",
+        "nao to legal",
+        "nao to bem",
+        "não estou legal",
+        "não estou bem",
+        "não estou bem"
+      ],
+      "responses": [
+        "O que você está sentindo, @name? 🤒",
+        "@name, que sintomas voce têm? :/"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ],
+        "contextSet": [
+          "symptomsContext"
+        ]
+      }
+    },
+    {
+      "tag": "DOENCAS",
+      "patterns": [
+        "surda",
+        "surdo",
+        "labirintite",
+        "labirinti",
+        "labirinte",
+        "labirintiti",
+        "tontura",
+        "tontura",
+        "dificuldade de compreender",
+        "vertigens",
+        "febre",
+        "zunindo",
+        "zunido",
+        "dói",
+        "dor",
+        "doendo",
+        "ardendo",
+        "ouvido",
+        "revisão",
+        "inflamação",
+        "secreção",
+        "dor",
+        "perfuração",
+        "não escuto",
+        "não estou escutando",
+        "surdez",
+        "subita",
+        "consulta",
+        "exame",
+        "audiometria",
+        "audio",
+        "aparelho",
+        "bera",
+        "Zumbido no ouvido",
+        "Zumbido",
+        "Zunido no ouvido",
+        "Zunido",
+        "Ruído",
+        "Tinnitus",
+        "Acúfeno",
+        "Incomodo",
+        "Barulho",
+        "não aguento",
+        "Não aguento",
+        "não to aguentando",
+        "não estou aguentando",
+        "não aguentando",
+        "não aguentando",
+        "não aguentando",
+        "não aguentando",
+        "não aguentando",
+        "ta foda",
+        "dói",
+        "continua",
+        "dor persiste",
+        "o problema persiste"
+      ],
+      "responses": [
+        "Você já consultou o médico otorrinolaringologista, @name? 🤒",
+        "@name, você já foi a um médico otorrinolaringologista? 🤒",
+        "@name, você já visitou um médico otorrinolaringologista? 🤒",
+        "Você já visitou um médico otorrinolaringologista, @name? 🤒"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext",
+          "symptomsContext"
+        ],
+        "contextSet": [
+          "doctorContext"
+        ]
+      }
+    },
+    {
+      "tag": "MEDICO_SIM",
+      "patterns": [
+        "sim",
+        "s",
+        "yes",
+        "y",
+        "claro",
+        "ahm",
+        "aham",
+        "pode cre",
+        "yep",
+        "pdc",
+        "si",
+        "yup"
+      ],
+      "responses": [
+        "@name, a Otoneuro temos muitos exames para complementar a sua avaliação, entre em contato no nosso telefone e agende :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "doctorContext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "MEDICO_NO",
+      "patterns": [
+        "não",
+        "nao",
+        "no",
+        "n",
+        "naum",
+        "naun",
+        "nope"
+      ],
+      "responses": [
+        "@name, a avaliação do médico Otorrinolaringologista é de extrema importância e pode ser complementada com exames na Otoneuro que auxiliarão ao melhor diagnóstico :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "doctorContext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "SHOW_TAG_BUTTONS",
+      "patterns": [
+        "TEST_BUTTONS"
+      ],
+      "responses": [
+        ""
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "SHOW_LIST",
+      "patterns": [
+        "TESTE_LISTA"
+      ],
+      "responses": [
+        ""
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "AJUDA",
+      "patterns": [
+        "o que eu posso fazer",
+        "preciso de ajuda",
+        "poderiam me ajudar?",
+        "estou com uma dúvida",
+        "o que voce pode fazer",
+        "o que vc pode fazer",
+        "ajuda",
+        "o que da pra fazer",
+        "serviços",
+        "servicos",
+        "servicos disponiveis",
+        "funcionalidades",
+        "preciso de ajuda"
+      ],
+      "responses": [
+        "Como podemos ajudar você, @name?",
+        "Como podemos lhe ajudar, @name?",
+        "Com o que posso lhe ajudar, @name?"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "AGRADECIMENTO",
+      "patterns": [
+        "obrigado",
+        "obrigada",
+        "tks",
+        "<3",
+        "thank you",
+        "você foi útil",
+        "você me ajudou",
+        "valeu",
+        "vlw",
+        "valew"
+      ],
+      "responses": [
+        "Nós que agradecemos seu contato :D",
+        "Se precisar de algo estou à disposição :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "SAUDACAO",
+      "patterns": [
+        "ola",
+        "hi",
+        "oi",
+        "tudo bem",
+        "como vai",
+        "tudo certo",
+        "e ai",
+        "bom dia",
+        "boa tarde",
+        "boa noite",
+        "alguem ai",
+        "alguém ai",
+        "alguen ai",
+        "alguem tai",
+        "alguem ta ai",
+        "alguem tá aí",
+        "alguem aí",
+        "alguen aí",
+        "alguém aí",
+        "alguem ai",
+        "alguem ai",
+        "online"
+      ],
+      "responses": [
+        "@name, em que podemos te ajudar hoje?!",
+        "Olá @name, confira o nosso menu de opções no canto inferior do chat :)",
+        "Oi @name, em que posso lhe ajudar? :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "DESPEDIDA",
+      "patterns": [
+        "tchau",
+        "até mais",
+        "até logo",
+        "tchauu",
+        "tiau",
+        "adeus",
+        "flw",
+        "falou",
+        "flws",
+        "falous",
+        "falouz",
+        "adeus",
+        "feito",
+        "ate mais",
+        "até +",
+        "ate +",
+        "atéh +",
+        "até mais",
+        "ateh mais"
+      ],
+      "responses": [
+        "Obrigada pelo contato, @name <3. Até mais :)",
+        "Até mais!",
+        "Até a próxima, @name :D"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "TESTE_AUDICAO",
+      "patterns": [
+        "Vocês fazem o teste da orelinha?",
+        "orelinha",
+        "orela",
+        "orelha",
+        "Teste da orelhinha",
+        "repetir",
+        "repetir teste",
+        "meu filho não passou no teste",
+        "refazer",
+        "retestar",
+        "alterado",
+        "alteração",
+        "Não fez o teste",
+        "Não realizou o teste"
+      ],
+      "responses": [
+        "@name, o primeiro teste da orelhinha deve ser realizado dentro do primeiro mês de vida, caso seu bebe não tenha passado é recomendado que refaça em 15 dias.\nVocê pode nos encontrar no telefone (51) 3527-3873, WhatsApp (51) 99399-7889 no e-mail atendimento@otoneuroclinica.com ou em nossas redes sociais :)"
+      ],
+      "context": {
+        "contextSet": [
+          "auditionTestcontext"
+        ],
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "tinnitusContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "TESTE_AUDICAO_PERSISTE",
+      "patterns": [
+        "Ainda",
+        "posso",
+        "consultar",
+        "consulta",
+        "consulta",
+        "persiste",
+        "persistente",
+        "persistir",
+        "continuar",
+        "não para",
+        "continua"
+      ],
+      "responses": [
+        "@name, estamos prontos para receber você. Marque um exame pelos nossos canais de atendimento :)",
+        "@name, informe seu telefone que entraremos em contato com você :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "auditionTestcontext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "PALAVRAO",
+      "patterns": [
+        "mas que merda",
+        "desgraçado",
+        "desgraçada",
+        "merda",
+        "bosta",
+        "porra",
+        "bicha",
+        "bichona",
+        "bixa",
+        "bixona",
+        "boiola",
+        "boiolão",
+        "boquete",
+        "boqueteira",
+        "buceta",
+        "bucetao",
+        "bucetão",
+        "bucete",
+        "bucetuda",
+        "buscetão",
+        "busseta",
+        "bussetão",
+        "bussetuda",
+        "cacete",
+        "caraio",
+        "caralho",
+        "caralhuda",
+        "chupadora",
+        "ciririca",
+        "ciriricuda",
+        "cú",
+        "cuzão",
+        "cuzão",
+        "fdp",
+        "filho da puta",
+        "gay",
+        "gayzão",
+        "gayzinho",
+        "guei",
+        "gueizinho",
+        "guey",
+        "kacete",
+        "karalho",
+        "kct",
+        "kcte",
+        "masturabadora",
+        "masturbação",
+        "masturbar",
+        "masturbassão",
+        "olho do cú",
+        "pata de camelo",
+        "piça",
+        "pingola",
+        "piroca",
+        "pissa",
+        "punheta",
+        "punheteiro",
+        "puta",
+        "putão",
+        "putinha",
+        "putinho",
+        "putona",
+        "rabo",
+        "racha",
+        "rachuda",
+        "rola",
+        "sapata",
+        "sapatona",
+        "siriricuda",
+        "siririkuda",
+        "viadinho",
+        "viado",
+        "vtnc",
+        "xupadora",
+        "xupar um caralho",
+        "vsf",
+        "vtnc",
+        "cu",
+        "viado",
+        "burro",
+        "burrico",
+        "burra",
+        "carai",
+        "retardado",
+        "animal",
+        "chota"
+      ],
+      "responses": [
+        "Calma @name :(, posso lhe ajudar com algo?"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "tinnitusContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "RELIGIAO",
+      "patterns": [
+        "jesus cristo",
+        "jesus ",
+        "umbanda",
+        "igreja",
+        "macumbeira",
+        "pai de santo",
+        "filho de santo",
+        "mãe de santo",
+        "santo",
+        "alá",
+        "buda",
+        "reino universal"
+      ],
+      "responses": [
+        "Em assuntos relacionados à religião eu prefiro ficar de fora, @name :), porém posso lhe ajudar com outras dúvidas"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "POLITICA",
+      "patterns": [
+        "bossanaro",
+        "bussonaro",
+        "bussonaru",
+        "color de mello",
+        "corrupto",
+        "corruptos",
+        "dilma",
+        "CUT",
+        "deputado",
+        "eleição",
+        "eleissão",
+        "governador",
+        "governo estadual",
+        "governo federal",
+        "governo municipal",
+        "luis inácio",
+        "lula",
+        "lula livre",
+        "movimento sem terra",
+        "MST",
+        "partido do trabalhador",
+        "partido dos trabalhadores",
+        "partido político",
+        "partidos de direita",
+        "partidos de esquera",
+        "PCDOB",
+        "PMBD",
+        "presidente",
+        "PSDB",
+        "PT",
+        "senador",
+        "sindicato",
+        "vereador",
+        "votar",
+        "votas",
+        "votos"
+      ],
+      "responses": [
+        "Em política eu prefiro ser isento, mas em que mais posso lhe ajudar, @name :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "FUTEBOL",
+      "patterns": [
+        "atletiba",
+        "bahia",
+        "bavi",
+        "classico caju",
+        "clubes",
+        "clubes de futebol",
+        "Corinthians",
+        "Curinthia",
+        "Curinthias",
+        "Curintia",
+        "flaflu",
+        "Flamengo",
+        "Futebol",
+        "Gremio",
+        "Grêmio",
+        "grenal",
+        "Inter",
+        "Internacional",
+        "Paixão por futebol",
+        "Sport Clube Internacional",
+        "Vasco",
+        "vitoria",
+        "cbf",
+        "palmeiras",
+        "palmeiras não tem mundial",
+        "fifa",
+        "campeão do mundo fifa",
+        "rebaixado",
+        "rei do futebol",
+        "craque de bola",
+        "boleiro"
+      ],
+      "responses": [
+        "De futebol ⚽ eu não entendo, @name, mas posso tentar lhe ajudar com outras dúvidas que você tem :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "CONVENIO",
+      "patterns": [
+        "Convênio",
+        "Convênios",
+        "Atendimento pelo convênio",
+        "Unimed",
+        "Prontomed",
+        "Allianz",
+        "Assiste bem",
+        "Saúde pas",
+        "Saude pas",
+        "Saude paz",
+        "Saúde paz",
+        "Ipasem",
+        "Doctor",
+        "Doctor Clin",
+        "Dotor Clin",
+        "Doutor Clin",
+        "clin",
+        "Centro Médico Estância Velha",
+        "Centro Medico Estância Velha",
+        "Centro Médico Estancia Velha",
+        "Centro Medico"
+      ],
+      "responses": [
+        "Atendemos vários conveniados. A Otoneuro atende pelos convênvios: Unimed,  Saúde Pas, Prontomed, Doctor Clin, Ipasem, Centro Médico Estância Velha, Allianz e Assiste Bem :).\nEu não citei o seu convênio? Não tem problema, entre em contato conosco, tenho certeza que vamos ver uma forma de atender você. Ligue para o telefone (51) 3527-3873, WhatsApp (51) 99399-7889 ou mande uma mensagem direta para nós :D"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "COPARTICIPACAO",
+      "patterns": [
+        "co participação",
+        "coparticipação",
+        "cobram",
+        "Particular",
+        "co-",
+        "participaçao",
+        "participaçãum",
+        "participasão",
+        "participacão",
+        "participacao",
+        "partissipacao",
+        "partiçipacao"
+      ],
+      "responses": [
+        "Atendemos aos convênios de acordo com as características do seu plano, @name.\nEntretanto, se você está em dúvida, entre em contato pelo telefone (51) 3527-3873, WhatsApp (51) 99399-7889 ou mande uma mensagem direta :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "TUDO_BEM",
+      "patterns": [
+        "tudo bem?",
+        "tudo certo?",
+        "como vai",
+        "vai bem?",
+        "como ta",
+        "como tá",
+        "como está",
+        "como vc ta",
+        "como tu ta",
+        "blz?",
+        "blz",
+        "sereno",
+        "suave",
+        "td bem?",
+        "td certo?",
+        "td ok?"
+      ],
+      "responses": [
+        "Tudo bem, @name :D Em que posso lhe ajudar?",
+        "Tudo certo, @name :D Em que posso lhe ajudar?"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "NAO_IMPLEMENTADA",
+      "patterns": [
+        "EXAMS_PAYLOAD"
+      ],
+      "responses": [
+        "Que pena! 🙇 ‍essa opção não está disponível ainda. Aqui você poderá visualizar seu exame :) Posso te ajudar com algo mais, @name?"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "OK",
+      "patterns": [
+        "ok",
+        "entendi",
+        "blz",
+        "beleza",
+        "saquei",
+        "ahm",
+        "aha",
+        "aham"
+      ],
+      "responses": [
+        ";)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ANSWER_NO",
+      "patterns": [
+        "no"
+      ],
+      "responses": [
+        "clicou não"
+      ],
+      "context": {
+        "contextFilter": [
+          "painQuestion"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "MENSAGEM_DIRETA",
+      "patterns": [
+        "DIRECT_MESSAGE",
+        "mensagem direta"
+      ],
+      "responses": [
+        "@name, para mensagens diretas com os nossos atendentes e consultores, entre em contato pelo nosso email atendimento@otoneuroclinica.com️ :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "REGISTER",
+      "patterns": [
+        "REGISTER_PAYLOAD",
+        "cadastro",
+        "cadastrar",
+        "registrar",
+        "rejistrar",
+        "registro",
+        "rejistro",
+        "usuario",
+        "usuário",
+        "cadastrado",
+        "cadastrada",
+        "associar",
+        "login",
+        "sign up",
+        "assinar",
+        "acinar",
+        "ascinar"
+      ],
+      "callback": {
+        "name": "Cadastre-se abaixo, @name :)",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://otoneuro.weenvoyer.com/#/register?id={facebookId}",
+            "text": "Cadastrar"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "tinnitusContext",
+          "customerServiceContext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "DESCULPA",
+      "patterns": [
+        "desculpa",
+        "perdao",
+        "perdão",
+        "dsclp",
+        "perdaum",
+        "perdaun",
+        "perdoa",
+        "arrependi",
+        "arrependido",
+        "arrependida",
+        "sorry"
+      ],
+      "responses": [
+        "Sem problemas, @name <3"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "auditionTestcontext",
+          "symptomsContext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    }
+  ],
+  "globalFallback": {
+    "minimumScoreToFallback": 0.10,
+    "responses": [
+      "Desculpe, não entendi o que você disse",
+      "Desculpe, pode tentar novamente, por favor?! 😅",
+      "@name, não consegui compreender, pode ser mais específico, por favor? :)"
+    ]
+  }
+}
