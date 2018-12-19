@@ -5,4 +5,4 @@ services:
     build: .
     working_dir: /user/src/app
     ports:
-    - 8060:8060
+    - 8070:8070
