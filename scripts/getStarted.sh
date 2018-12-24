@@ -7,4 +7,4 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "payload":"GET_STARTED"
  }
 ]
-}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAADz7gTuL0cBAC2ZAh01yJ2V71uI4ki4uxWetLYXjZC9ZALZCNDR71ZCSZBylAo1sKkNzHHOdlPFXNhZBiBdJy8lMLZBYlxTrdYPC01nCBotx5BOd6TWt25LgEgwDGUgIoWq6mmxdWrGg950BXabcxF5z0Oxbtvf5bsrOhCZA6gp5Tz2L7X4pG732"
+}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAaliTZBYzq4BACbxUoFxxmEyv2lsU1AG6OmLyzGbQSqxoWmIiptA28ZBhRjBhZCL6W7GE4O28TfsTIunSGmZBZClIKfOXyTRgOZBIZBApO2mOfAZAsT01ihjdbZBJZCFzpC6ssIX4gVnFZChJWGxbPofeyOepnGHHZAMwgWVW5cmZBWwoqiz74IptDLq"
