@@ -19,11 +19,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
-          "tinnitusContext",
           "customerServiceContext"
         ]
       }
@@ -49,10 +44,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -78,10 +69,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -110,7 +97,9 @@
         "alguém aí",
         "alguem ai",
         "alguem ai",
-        "online"
+        "alguen",
+        "alguem",
+        "alguém"
       ],
       "responses": [
         "@name, em que podemos te ajudar hoje?!",
@@ -120,10 +109,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -159,10 +144,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -266,11 +247,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
-          "tinnitusContext",
           "customerServiceContext"
         ]
       }
@@ -297,10 +273,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -351,10 +323,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -400,10 +368,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -439,10 +403,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -474,10 +434,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -493,10 +449,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -519,10 +471,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -556,10 +504,6 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ],
         "contextSet": [
@@ -583,7 +527,8 @@
         "sorry"
       ],
       "responses": [
-        "Sem problemas, @name <3"
+        "Sem problemas, @name <3",
+        "Tranquilo, @name :)",
       ],
       "context": {
         "contextFilter": [
@@ -643,10 +588,6 @@
         ],
         "contextFilter": [
           "#nocontext",
-          "symptomsContext",
-          "auditionTestcontext",
-          "healthyInsuranceContext",
-          "painContext",
           "customerServiceContext"
         ]
       }
@@ -715,10 +656,8 @@
         ]
       },
       "context": {
-        "contextSet": [
-          "#nocontext"
-        ],
         "contextFilter": [
+          "#nocontext",
           "customerServiceContext"
         ]
       }
@@ -765,20 +704,14 @@
         ]
       },
       "context": {
-        "contextSet": [
-          "#nocontext"
-        ],
         "contextFilter": [
+          "#nocontext",
           "customerServiceContext"
         ]
       }
     }
     
     
-    
-    
-    
-
     
   ],
   "globalFallback": {
