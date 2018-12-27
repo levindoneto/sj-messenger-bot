@@ -39,10 +39,6 @@
         "o que vc pode fazer",
         "ajuda",
         "o que da pra fazer",
-        "serviços",
-        "servicos",
-        "servicos disponiveis",
-        "funcionalidades",
         "preciso de ajuda"
       ],
       "responses": [
@@ -637,7 +633,7 @@
           {
             "type": "web_url",
             "url": "https://www.saojoaofarmacias.com.br/lojas/view",
-            "text": "Ver lojas"
+            "text": "Ver Lojas"
           }
         ]
       },
@@ -673,7 +669,98 @@
           {
             "type": "web_url",
             "url": "https://www.saojoaofarmacias.com.br/lojas/view",
-            "text": "Ver lojas em sua localização"
+            "text": "Ver Lojas"
+          }
+        ]
+      },
+      "context": {
+        "contextSet": [
+          "#nocontext"
+        ],
+        "contextFilter": [
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "SERVICOS",
+      "patterns": [
+        "serviços",
+        "servicos",
+        "servicos disponiveis",
+        "funcionalidades",
+        "o que vcs tem",
+        "o que voces tem",
+        "o que você tem",
+        "o que tem",
+        "o que têm",
+        "vacina",
+        "injetáveis",
+        "nutricional",
+        "temperatura",
+        "pressão",
+        "glicemia",
+        "testes",
+        "exames"
+      ],
+      "callback": {
+        "name": "@name, Disponibilizamos alguns serviços específicos em nossas lojas como:\nverificação de temperatura corporal, verificação de pressão, verificação de glicemia, aplicação de injetáveis e orientações nutricionais. :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://www.saojoaofarmacias.com.br/lojas/view",
+            "text": "Ver Serviços"
+          }
+        ]
+      },
+      "context": {
+        "contextSet": [
+          "#nocontext"
+        ],
+        "contextFilter": [
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "PRODUTOS",
+      "patterns": [
+        "produto",
+        "produtos",
+        "medicamento",
+        "medicamentos",
+        "perfumaria",
+        "perfume",
+        "perfumes",
+        "perfumez",
+        "higiene",
+        "higienenico",
+        "higienênico",
+        "banho",
+        "remédio",
+        "remédios",
+        "compra",
+        "compras",
+        "comprar",
+        "oferta",
+        "ofertas",
+        "promocao",
+        "promoçao",
+        "promocão",
+        "promoção",
+        "promocoes",
+        "promoçoes",
+        "promoções"
+      ],
+      "callback": {
+        "name": "@name, Para informações sobre produtos, seus valores e ofertas, você deve ligar diretamente em uma de nossas lojas. Acesse também o nosso aplicativo ou site, você encontrará toda linha de produtos. :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://www.saojoaofarmacias.com.br/encarte",
+            "text": "Ver Produtos"
           }
         ]
       },
@@ -691,6 +778,7 @@
     
     
     
+
     
   ],
   "globalFallback": {
