@@ -19,7 +19,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -44,7 +45,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -69,7 +71,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -109,7 +112,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -144,7 +148,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -247,7 +252,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -273,7 +279,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -323,7 +330,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -373,41 +381,6 @@
       }
     },
     {
-      "tag": "CONVENIO",
-      "patterns": [
-        "Convênio",
-        "Convênios",
-        "Atendimento pelo convênio",
-        "Unimed",
-        "Prontomed",
-        "Allianz",
-        "Assiste bem",
-        "Saúde pas",
-        "Saude pas",
-        "Saude paz",
-        "Saúde paz",
-        "Ipasem",
-        "Doctor",
-        "Doctor Clin",
-        "Dotor Clin",
-        "Doutor Clin",
-        "clin",
-        "Centro Médico Estância Velha",
-        "Centro Medico Estância Velha",
-        "Centro Médico Estancia Velha",
-        "Centro Medico"
-      ],
-      "responses": [
-        "Atendemos vários conveniados. A Otoneuro atende pelos convênvios: Unimed,  Saúde Pas, Prontomed, Doctor Clin, Ipasem, Centro Médico Estância Velha, Allianz e Assiste Bem :).\nEu não citei o seu convênio? Não tem problema, entre em contato conosco, tenho certeza que vamos ver uma forma de atender você. Ligue para o telefone (51) 3527-3873, WhatsApp (51) 99399-7889 ou mande uma mensagem direta para nós :D"
-      ],
-      "context": {
-        "contextFilter": [
-          "#nocontext",
-          "customerServiceContext"
-        ]
-      }
-    },
-    {
       "tag": "TUDO_BEM",
       "patterns": [
         "tudo bem?",
@@ -434,7 +407,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -471,7 +445,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -499,12 +474,13 @@
         "mensagem direta"
       ],
       "responses": [
-        "@name, para mensagens diretas com os nossos atendentes e consultores, entre em contato pelo nosso email atendimento@otoneuroclinica.com️ :)"
+        "@name, para mensagens diretas com os nossos atendentes e consultores, entre em contato pelo nosso telefone (54) 3335-0100️ :)"
       ],
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ],
         "contextSet": [
           "#nocontext"
@@ -533,14 +509,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "auditionTestcontext",
-          "symptomsContext",
-          "healthyInsuranceContext",
-          "painContext",
-          "customerServiceContext"
-        ],
-        "contextSet": [
-          "#nocontext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -588,7 +558,8 @@
         ],
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -658,7 +629,8 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
         ]
       }
     },
@@ -706,10 +678,202 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext"
+        ]
+      }
+    },
+    {
+      "tag": "SINTOMAS",
+      "patterns": [
+        "SYMPTOMS_PAYLOAD"
+      ],
+      "responses": [
+        "O que você está sentindo, @name? 🤒",
+        "@name, que sintomas você têm? :/"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext"
+        ],
+        "contextSet": [
+          "symptomsContext"
+        ]
+      }
+    },
+    {
+      "tag": "SINTOMAS_TEXTO",
+      "patterns": [
+        "sintomas",
+        "doente",
+        "sentindo",
+        "sintoma",
+        "nao to legal",
+        "nao to bem",
+        "não estou legal",
+        "não estou bem",
+        "não estou bem"
+      ],
+      "responses": [
+        "O que você está sentindo, @name? 🤒",
+        "@name, que sintomas voce têm? :/"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext"
+        ],
+        "contextSet": [
+          "symptomsContext"
+        ]
+      }
+    },
+    {
+      "tag": "DOENCAS",
+      "patterns": [
+        "surda",
+        "surdo",
+        "labirintite",
+        "labirinti",
+        "labirinte",
+        "labirintiti",
+        "tontura",
+        "tontura",
+        "dificuldade de compreender",
+        "vertigens",
+        "febre",
+        "zunindo",
+        "zunido",
+        "dói",
+        "dor",
+        "doendo",
+        "ardendo",
+        "ouvido",
+        "revisão",
+        "inflamação",
+        "secreção",
+        "dor",
+        "perfuração",
+        "não escuto",
+        "não estou escutando",
+        "surdez",
+        "subita",
+        "consulta",
+        "exame",
+        "audiometria",
+        "audio",
+        "aparelho",
+        "bera",
+        "Zumbido no ouvido",
+        "Zumbido",
+        "Zunido no ouvido",
+        "Zunido",
+        "Ruído",
+        "Tinnitus",
+        "Acúfeno",
+        "Incomodo",
+        "Barulho",
+        "não aguento",
+        "Não aguento",
+        "não to aguentando",
+        "não estou aguentando",
+        "não aguentando",
+        "não aguentando",
+        "não aguentando",
+        "não aguentando",
+        "não aguentando",
+        "ta foda",
+        "dói",
+        "continua",
+        "dor persiste",
+        "o problema persiste",
+        "dor",
+        "febre",
+        "cansaço",
+        "fadiga",
+        "náusea",
+        "enxaqueca",
+        "gripe",
+        "sono",
+        "mal estar",
+        "pressão",
+        "enjoo",
+        "batimentos",
+        "respiração",
+        "falta"
+      ],
+      "responses": [
+        "Você já consultou o médico especialista, @name? 🤒",
+        "@name, você já foi a um médico especialista? 🤒",
+        "@name, você já visitou um médico especialista? 🤒",
+        "Você já visitou um médico especialista, @name? 🤒"
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext"
+        ],
+        "contextSet": [
+          "doctorContext"
+        ]
+      }
+    },
+    {
+      "tag": "MEDICO_SIM",
+      "patterns": [
+        "sim",
+        "s",
+        "yes",
+        "y",
+        "claro",
+        "ahm",
+        "aham",
+        "pode cre",
+        "yep",
+        "pdc",
+        "si",
+        "yup"
+      ],
+      "responses": [
+        "@name, na Farmácia São João temos muitos produtos e serviços para complementar sua consulta. Viste uma de nossas lojas ou entre em contato conosco. :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "doctorContext"
+        ],
+        "contextSet": [
+          "#nocontext"
+        ]
+      }
+    },
+    {
+      "tag": "MEDICO_NO",
+      "patterns": [
+        "não",
+        "nao",
+        "no",
+        "n",
+        "naum",
+        "naun",
+        "nope"
+      ],
+      "responses": [
+        "@name, a avaliação do médico é de extrema importância e pode ser complementada com auxílio dos nossos farmaceúticos :)"
+      ],
+      "context": {
+        "contextFilter": [
+          "doctorContext"
+        ],
+        "contextSet": [
+          "#nocontext"
         ]
       }
     }
+
     
     
     
