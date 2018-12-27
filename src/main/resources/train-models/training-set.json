@@ -11,12 +11,7 @@
         "buttons": [
           {
             "type": "web_url",
-            "url": "https://otoneuro.weenvoyer.com/#/register?id={facebookId}",
-            "text": "Cadastrar usuário"
-          },
-          {
-            "type": "web_url",
-            "url": "https://www.facebook.com/clinicaotoneuro/",
+            "url": "https://www.facebook.com/farmaciassaojoao",
             "text": "Curtir nossa página"
           }
         ]
@@ -179,6 +174,9 @@
     {
       "tag": "PALAVRAO",
       "patterns": [
+        "droga",
+        "drogado",
+        "drogada",
         "mas que merda",
         "desgraçado",
         "desgraçada",
@@ -604,7 +602,96 @@
           "#nocontext"
         ]
       }
+    },
+    {
+      "tag": "ATENDIMENTO",
+      "patterns": [
+        "Qual o horário de atendimento?",
+        "qual é horário",
+        "qual horário",
+        "quais horários",
+        "que horas abre",
+        "está aberto",
+        "está funcionando",
+        "horas",
+        "horário",
+        "aberto",
+        "estão trabalhando",
+        "CUSTOMER_SERVICE_PAYLOAD",
+        "Atendimento",
+        "agendar",
+        "agendamento",
+        "ajendar",
+        "ajenda",
+        "ajendamento",
+        "marcar",
+        "marca",
+        "marcá",
+        "markar",
+        "marka"
+      ],
+      "callback": {
+        "name": "@name, Para informações sobre nossos horários de funcionamento, você deve ligar diretamente em uma de nossas lojas.:)\nAqui no nosso site, você encontra o telefone e endereço de todas elas :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://www.saojoaofarmacias.com.br/lojas/view",
+            "text": "Ver lojas em sua localização"
+          }
+        ]
+      },
+      "context": {
+        "contextSet": [
+          "customerServiceContext"
+        ],
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ATENDIMENTO_INDO",
+      "patterns": [
+        "to indo",
+        "estou indo",
+        "to chegando",
+        "estou chegando",
+        "vou ir",
+        "posso ir",
+        "vou chegar"
+      ],
+      "callback": {
+        "name": "@name, antes seria melhor ligar diretamente em uma de nossas lojas.:)\nAqui no nosso site, você encontra o telefone e endereço de todas elas :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://www.saojoaofarmacias.com.br/lojas/view",
+            "text": "Ver lojas em sua localização"
+          }
+        ]
+      },
+      "context": {
+        "contextSet": [
+          "#nocontext"
+        ],
+        "contextFilter": [
+          "customerServiceContext"
+        ]
+      }
     }
+    
+    
+    
+    
+    
+    
   ],
   "globalFallback": {
     "minimumScoreToFallback": 0.10,
