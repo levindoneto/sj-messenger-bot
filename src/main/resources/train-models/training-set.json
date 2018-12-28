@@ -613,7 +613,8 @@
         "pressão",
         "glicemia",
         "testes",
-        "exames"
+        "exames",
+        "SERVICES_PAYLOAD"
       ],
       "callback": {
         "name": "@name, Disponibilizamos alguns serviços específicos em nossas lojas como:\nverificação de temperatura corporal, verificação de pressão, verificação de glicemia, aplicação de injetáveis e orientações nutricionais. :D",
@@ -662,7 +663,8 @@
         "promoção",
         "promocoes",
         "promoçoes",
-        "promoções"
+        "promoções",
+        "PRODUCTS_PAYLOAD"
       ],
       "callback": {
         "name": "@name, Para informações sobre produtos, seus valores e ofertas, você deve ligar diretamente em uma de nossas lojas. Acesse também o nosso aplicativo ou site, você encontrará toda linha de produtos. :D",
@@ -893,7 +895,8 @@
         "entrevista",
         "entrevistar",
         "entrevistado",
-        "entrevistada"
+        "entrevistada",
+        "OPORTUNITIES_PAYLOAD"
       ],
       "callback": {
         "name": "@name, Ficamos felizes em saber que você quer fazer parte da Rede de Farmácias São João!\n\nPara ter acesso às vagas disponíveis e cadastrar seu currículo, você deve acessar o nosso site, na aba Contato – Trabalhe Conosco",
@@ -934,7 +937,7 @@
         "Preferencial",
         "cartões de crédito",
         "outros serviços",
-        "OUTROS_SERVICOS_PAYLOAD"
+        "OTHER_SERVICES_PAYLOAD"
       ],
       "callback": {
         "type": "CAROUSEL_BUTTONS",
