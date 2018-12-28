@@ -913,9 +913,81 @@
           "symptomsContext"
         ]
       }
+    },
+    {
+      "tag": "OUTROS_SERVICOS",
+      "patterns": [
+        "pedido",
+        "pedidos",
+        "compras",
+        "compra",
+        "fidelidade",
+        "fidelidades",
+        "programa",
+        "programas",
+        "convênio",
+        "convênios",
+        "convenio",
+        "convenios",
+        "outros servicos",
+        "Cartão",
+        "Preferencial",
+        "cartões de crédito",
+        "outros serviços",
+        "OUTROS_SERVICOS_PAYLOAD"
+      ],
+      "callback": {
+        "type": "CAROUSEL_BUTTONS",
+        "carouselItems": [
+          {
+            "title": "Convênios",
+            "subtitle": "O Cartão Preferencial da Rede de Farmácias São João foi feito para facilitar a sua vida, funcionando diferente dos cartões de crédito convencionais.",
+            "imageUrl": "https://i.ibb.co/Xps10Q6/sj.png",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://www.saojoaofarmacias.com.br/convenios",
+                "title": "Acesse"
+              }
+            ]
+          },
+          {
+            "title": "Entregas",
+            "subtitle": "Para informações sobre tele entrega você deve ligar em uma de nossas lojas, pois esse serviço varia de loja para loja em cada cidade",
+            "imageUrl": "https://i.ibb.co/Xps10Q6/sj.png",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://www.saojoaofarmacias.com.br/lojas/view",
+                "title": "Acesse"
+              }
+            ]
+          },
+          {
+            "title": "Pedidos",
+            "subtitle": "Consulte a situação de entrega de seus pedidos (em breve disponível)",
+            "imageUrl": "https://i.ibb.co/Xps10Q6/sj.png",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://www.saojoaofarmacias.com.br/",
+                "title": "Acesse"
+              }
+            ]
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
     }
-    
-    
     
     
   ],
