@@ -872,8 +872,49 @@
           "#nocontext"
         ]
       }
+    },
+    {
+      "tag": "OPORTUNIDADES",
+      "patterns": [
+        "oportunidades",
+        "oportunidade",
+        "currículo",
+        "curriculum",
+        "trabalho",
+        "trabalha",
+        "trabalhar",
+        "vaga",
+        "candidato",
+        "seleção",
+        "emprego",
+        "empregar",
+        "cv",
+        "vitae",
+        "entrevista",
+        "entrevistar",
+        "entrevistado",
+        "entrevistada"
+      ],
+      "callback": {
+        "name": "@name, Ficamos felizes em saber que você quer fazer parte da Rede de Farmácias São João!\n\nPara ter acesso às vagas disponíveis e cadastrar seu currículo, você deve acessar o nosso site, na aba Contato – Trabalhe Conosco",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "http://curriculo.farmaciassaojoao.com.br:8080/cvweb/conector?ACAO=CURRICULO&STATUS=TELALOGIN&SIS=RS&PERFIL=1&IDIOMA=0&BASE=NOVOCURRICULO",
+            "text": "Ver Vagas"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext"
+        ]
+      }
     }
-
+    
     
     
     
