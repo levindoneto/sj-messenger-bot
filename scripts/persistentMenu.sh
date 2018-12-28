@@ -35,7 +35,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
               "title":"Sintomas",
               "type":"postback",
               "payload":"SYMPTOMS_PAYLOAD"
-            }
+            },
             {
               "title":"Ver mais",
               "type":"nested",
