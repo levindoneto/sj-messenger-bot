@@ -901,7 +901,7 @@
         "buttons": [
           {
             "type": "web_url",
-            "url": "http://curriculo.farmaciassaojoao.com.br:8080/cvweb/conector?ACAO=CURRICULO&STATUS=TELALOGIN&SIS=RS&PERFIL=1&IDIOMA=0&BASE=NOVOCURRICULO",
+            "url": "http://curriculo.farmaciassaojoao.com.br:8080/cvweb/",
             "text": "Ver Vagas"
           }
         ]
