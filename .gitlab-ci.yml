@@ -25,11 +25,6 @@ build_and_test:
    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/sogroup/intention-core.git
    - cd ./intention-core && ./gradlew publish && cd ../
    - ./gradlew clean build
-   - echo "Running needed scripts (get started and persistent menu)"
-   - cd scripts/
-   - sh getStarted.sh
-   - sh persistentMenu.sh
-   - cd ../
  tags:
    - test
 
