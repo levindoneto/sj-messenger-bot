@@ -987,7 +987,48 @@
           "customerServiceContext"
         ]
       }
+    },
+    {
+      "tag": "OPORTUNIDADES",
+      "patterns": [
+        "ouvidoria",
+        "reclamar",
+        "reclamacao",
+        "reclamaçao",
+        "reclamação",
+        "reclamasão",
+        "reclamassão",
+        "reclamassao",
+        "reclamasao",
+        "vergonha",
+        "palhaçada",
+        "providencia",
+        "denuncia",
+        "denunciar",
+        "denúncia",
+        "denúnsiar",
+        "denúnsia"
+      ],
+      "callback": {
+        "name": "Olá  @name, tudo bem?\nPossuímos um canal que está a disposição para sugestões, dúvidas ou reclamações.\nVocê pode preencher o formulário no botão abaixo ou ligar para o fone 0800.648.2506 ☎️\nSua participação será sempre muito bem-vinda para melhor atendê-lo.",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": " https://www.saojoaofarmacias.com.br/fale-conosco/ouvidoria",
+            "text": "Preencher Formulário"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext"
+        ]
+      }
     }
+    
     
     
   ],
