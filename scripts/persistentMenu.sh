@@ -18,7 +18,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
           "payload":"CUSTOMER_SERVICE_PAYLOAD"
         },
         {
-          "title":"Nossos Serviços",
+          "title":"Serviços",
           "type":"postback",
           "payload":"SERVICES_PAYLOAD"
         },
@@ -27,23 +27,28 @@ curl -X POST -H "Content-Type: application/json" -d '{
           "type":"nested",
           "call_to_actions":[
             {
-              "title":"Localidade",
+              "title":"Produtos",
               "type":"postback",
-              "payload":"LOCALIZATION_PAYLOAD"
+              "payload":"PRODUCTS_PAYLOAD"
             },
+            {
+              "title":"Sintomas",
+              "type":"postback",
+              "payload":"SYMPTOMS_PAYLOAD"
+            }
             {
               "title":"Ver mais",
               "type":"nested",
               "call_to_actions":[
                 {
-                  "title":"Cadastrar",
+                  "title":"Oportunidades",
                   "type":"postback",
-                  "payload":"REGISTER_PAYLOAD"
+                  "payload":"OPORTUNITIES_PAYLOAD"
                 },
                 {
-                  "title":"Mensagem direta",
+                  "title":"Outros Serviços",
                   "type":"postback",
-                  "payload":"DIRECT_MESSAGE"
+                  "payload":"OTHER_SERVICES_PAYLOAD"
                 }
               ]
             }
