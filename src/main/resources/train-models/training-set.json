@@ -636,10 +636,43 @@
       }
     },
     {
+      "tag": "PRODUTOS_ESPECIFICO",
+      "patterns": [
+        "produt",
+        "produto",
+        "produtu",
+        "produtoss",
+        "productos",
+        "products",
+        "PRODUCTS_PAYLOAD"
+      ],
+      "callback": {
+        "name": "@name, para informações sobre produtos, seus valores e ofertas, você deve ligar diretamente em uma de nossas lojas :D\nAcesse também o nosso site e consulte os produtos que estão em destaque em nosso encarte :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": "https://www.saojoaofarmacias.com.br/encarte",
+            "text": "Ver Lojas"
+          },
+          {
+            "type": "web_url",
+            "url": "https://www.saojoaofarmacias.com.br/encarte",
+            "text": "Acesse Encarte"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext"
+        ]
+      }
+    },
+    {
       "tag": "PRODUTOS",
       "patterns": [
-        "produto",
-        "produtos",
         "medicamento",
         "medicamentos",
         "perfumaria",
@@ -663,11 +696,10 @@
         "promoção",
         "promocoes",
         "promoçoes",
-        "promoções",
-        "PRODUCTS_PAYLOAD"
+        "promoções"
       ],
       "callback": {
-        "name": "@name, Para informações sobre produtos, seus valores e ofertas, você deve ligar diretamente em uma de nossas lojas. Acesse também o nosso aplicativo ou site, você encontrará toda linha de produtos. :D",
+        "name": "@name, Para informações sobre produtos, seus valores e ofertas, você deve ligar diretamente em uma de nossas lojas. Acesse também o nosso site, você encontrará toda linha de produtos. :D",
         "type": "BUTTONS",
         "buttons": [
           {
