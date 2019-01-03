@@ -622,7 +622,7 @@
         "buttons": [
           {
             "type": "web_url",
-            "url": "https://www.saojoaofarmacias.com.br/lojas/view",
+            "url": "https://www.saojoaofarmacias.com.br/servicos_farmaceuticos",
             "text": "Ver Serviços"
           }
         ]
@@ -1030,7 +1030,59 @@
           "symptomsContext"
         ]
       }
+    },
+    {
+      "tag": "ENDEREÇO",
+      "patterns": [
+        "onde fica",
+        "onde é",
+        "como chegar",
+        "localização",
+        "localizacao",
+        "localizaçao",
+        "localizacão",
+        "localizasão",
+        "localizassão",
+        "localizasao",
+        "localizassao",
+        "local",
+        "localidade",
+        "loja",
+        "escritório",
+        "endereço",
+        "endereco",
+        "como chego",
+        "fica onde",
+        "Perto de onde",
+        "Clínica",
+        "Clinica",
+        "mapa",
+        "distância",
+        "LOCALIZATION_PAYLOAD"
+      ],
+      "callback": {
+        "name": "Olá  @name, clique no botão abaixo para encontrar a loja mais próxima de você :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": " https://www.saojoaofarmacias.com.br/lojas/view",
+            "text": "Ver Lojas"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
     }
+
     
     
     
