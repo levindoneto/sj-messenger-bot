@@ -651,6 +651,9 @@
         "produtoss",
         "productos",
         "products",
+        "encarte",
+        "encartes",
+        "enkarte",
         "PRODUCTS_PAYLOAD"
       ],
       "callback": {
