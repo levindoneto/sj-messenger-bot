@@ -20,7 +20,9 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
+          
         ]
       }
     },
@@ -46,7 +48,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -72,7 +75,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -113,7 +117,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -149,7 +154,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -253,7 +259,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -280,7 +287,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -331,7 +339,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -376,7 +385,9 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -408,7 +419,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -423,7 +435,9 @@
       "context": {
         "contextFilter": [
           "#nocontext",
-          "customerServiceContext"
+          "customerServiceContext",
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -446,24 +460,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
-        ]
-      }
-    },
-    {
-      "tag": "ANSWER_NO",
-      "patterns": [
-        "no"
-      ],
-      "responses": [
-        "clicou não"
-      ],
-      "context": {
-        "contextFilter": [
-          "painQuestion"
-        ],
-        "contextSet": [
-          "#nocontext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -480,7 +478,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ],
         "contextSet": [
           "#nocontext"
@@ -510,7 +509,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -559,7 +559,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -631,7 +632,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -666,7 +668,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -715,7 +718,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -732,7 +736,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ],
         "contextSet": [
           "symptomsContext"
@@ -760,7 +765,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ],
         "contextSet": [
           "symptomsContext"
@@ -851,7 +857,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ],
         "contextSet": [
           "doctorContext"
@@ -947,7 +954,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -1017,16 +1025,14 @@
       "context": {
         "contextFilter": [
           "#nocontext",
+          "customerServiceContext",
           "symptomsContext",
-          "auditionTestcontext",
-          "healthyInsuranceContext",
-          "painContext",
-          "customerServiceContext"
+          "doctorContext"
         ]
       }
     },
     {
-      "tag": "OPORTUNIDADES",
+      "tag": "DENUNCIA",
       "patterns": [
         "ouvidoria",
         "reclamar",
@@ -1061,7 +1067,8 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext"
+          "symptomsContext",
+          "doctorContext"
         ]
       }
     },
@@ -1108,11 +1115,9 @@
       "context": {
         "contextFilter": [
           "#nocontext",
+          "customerServiceContext",
           "symptomsContext",
-          "auditionTestcontext",
-          "healthyInsuranceContext",
-          "painContext",
-          "customerServiceContext"
+          "doctorContext"
         ]
       }
     },
@@ -1135,11 +1140,9 @@
       "context": {
         "contextFilter": [
           "#nocontext",
+          "customerServiceContext",
           "symptomsContext",
-          "auditionTestcontext",
-          "healthyInsuranceContext",
-          "painContext",
-          "customerServiceContext"
+          "doctorContext"
         ]
       }
     }
