@@ -675,6 +675,8 @@
       "patterns": [
         "medicamento",
         "medicamentos",
+        "protetor",
+        "bronzeador",
         "perfumaria",
         "perfume",
         "perfumes",
@@ -1099,6 +1101,33 @@
           {
             "type": "web_url",
             "url": " https://www.saojoaofarmacias.com.br/lojas/view",
+            "text": "Ver Lojas"
+          }
+        ]
+      },
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "symptomsContext",
+          "auditionTestcontext",
+          "healthyInsuranceContext",
+          "painContext",
+          "customerServiceContext"
+        ]
+      }
+    },
+    {
+      "tag": "ENTREGA",
+      "patterns": [
+        "entrega"
+      ],
+      "callback": {
+        "name": "Olá  @name, Para informações sobre tele entrega, você deve ligar direto em uma de nossas lojas, pois esse serviço varia de uma para a outra :D",
+        "type": "BUTTONS",
+        "buttons": [
+          {
+            "type": "web_url",
+            "url": " https://www.saojoaofarmacias.com.br",
             "text": "Ver Lojas"
           }
         ]
