@@ -315,6 +315,12 @@
         "bossanaro",
         "bussonaro",
         "bussonaru",
+        "bolsonaro",
+        "bolsomito",
+        "buçonaru",
+        "bolçonaro",
+        "bolçomito",
+        "bolço",
         "color de mello",
         "corrupto",
         "corruptos",
@@ -347,7 +353,10 @@
         "vereador",
         "votar",
         "votas",
-        "votos"
+        "votos",
+        "votou",
+        "votara",
+        "vot"
       ],
       "responses": [
         "Em política eu prefiro ser isento, mas em que mais posso lhe ajudar, @name :)"
