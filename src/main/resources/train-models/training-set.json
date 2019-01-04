@@ -6,16 +6,35 @@
         "GET_STARTED"
       ],
       "callback": {
-        "name": "Olá, @name! Estamos super felizes de conversar com você, em que podemos ajudar? :)",
-        "type": "BUTTONS",
-        "buttons": [
+        "type": "CAROUSEL_BUTTONS",
+        "carouselItems": [
           {
-            "type": "web_url",
-            "url": "https://www.facebook.com/farmaciassaojoao",
-            "text": "Curtir nossa página"
+            "title": "Ínicio",
+            "subtitle": "Olá, @name! Estamos super felizes de conversar com você, em que podemos ajudar?",
+            "imageUrl": "https://i.ibb.co/LNygNwR/1.jpg",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://www.saojoaofarmacias.com.br",
+                "title": "Acesse Site"
+              }
+            ]
+          },
+          {
+            "title": "Curtir Página",
+            "subtitle": "Curta nossa página no Facebook para ficar por dentro das nossas promoções e informações importantes",
+            "imageUrl": "https://i.ibb.co/DR0P7GM/2.jpg",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://www.facebook.com/farmaciassaojoao",
+                "title": "Acesse Página"
+              }
+            ]
           }
         ]
       },
+      
       "context": {
         "contextFilter": [
           "#nocontext",
@@ -1074,7 +1093,7 @@
           {
             "title": "Convênios",
             "subtitle": "O Cartão Preferencial da Rede de Farmácias São João foi feito para facilitar a sua vida, funcionando diferente dos cartões de crédito convencionais.",
-            "imageUrl": "https://i.ibb.co/Xps10Q6/sj.png",
+            "imageUrl": "https://i.ibb.co/DR0P7GM/2.jpg",
             "buttons": [
               {
                 "type": "web_url",
@@ -1086,7 +1105,7 @@
           {
             "title": "Entregas",
             "subtitle": "Para informações sobre tele entrega você deve ligar em uma de nossas lojas, pois esse serviço varia de loja para loja em cada cidade",
-            "imageUrl": "https://i.ibb.co/Xps10Q6/sj.png",
+            "imageUrl": "https://i.ibb.co/DR0P7GM/2.jpg",
             "buttons": [
               {
                 "type": "web_url",
@@ -1098,7 +1117,7 @@
           {
             "title": "Pedidos",
             "subtitle": "Consulte a situação de entrega de seus pedidos (em breve disponível)",
-            "imageUrl": "https://i.ibb.co/Xps10Q6/sj.png",
+            "imageUrl": "https://i.ibb.co/DR0P7GM/2.jpg",
             "buttons": [
               {
                 "type": "web_url",
