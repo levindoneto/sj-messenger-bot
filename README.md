@@ -53,3 +53,7 @@ If everything goes as planned the following object is printed in the console at 
 {"result":"Successfully added structured menu CTAs"}
 ```
 
+### Image aspect ratio in carousel
+
+* 1:1.91 -> height:width
+
