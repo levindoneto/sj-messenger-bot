@@ -13573,8 +13573,7 @@
         "contextFilter": [
           "#nocontext",
           "customerServiceContext",
-          "symptomsContext",
-          "doctorContext"
+          "symptomsContext"
         ]
       }
     },
