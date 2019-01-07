@@ -13652,7 +13652,6 @@
         "revisão",
         "inflamação",
         "secreção",
-        "dor",
         "perfuração",
         "não escuto",
         "não estou escutando",
@@ -13705,7 +13704,15 @@
         "morrendo",
         "morte",
         "morre",
-        "morrer"
+        "morrer",
+        "dor de",
+        "dor para",
+        "dor p",
+        "dor na",
+        "dor em",
+        "dor en",
+        "dor com",
+        "dor c"
       ],
       "responses": [
         "Você já consultou o médico especialista, @name? 🤒",
