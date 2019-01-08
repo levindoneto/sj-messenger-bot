@@ -765,6 +765,11 @@
       "tag": "PRODUTOS",
       "patterns": [
         "medicamento",
+        "descont",
+        "desconto",
+        "desconta",
+        "descontar",
+        "descontando",
         "medicamentos",
         "protetor",
         "bronzeador",
@@ -13798,6 +13803,8 @@
         "aprendiz",
         "aprendis",
         "vaga",
+        "vagah",
+        "vagar",
         "candidato",
         "seleção",
         "emprego",
@@ -13809,7 +13816,16 @@
         "entrevistar",
         "entrevistado",
         "entrevistada",
-        "OPORTUNITIES_PAYLOAD"
+        "OPORTUNITIES_PAYLOAD",
+        "candidatar",
+        "candidata",
+        "candidatá",
+        "candidatah",
+        "candidat",
+        "candidatando",
+        "candidatei",
+        "candidatado",
+        "candidatamos"
       ],
       "callback": {
         "name": "@name, Ficamos felizes em saber que você quer fazer parte da Rede de Farmácias São João!\n\nPara ter acesso às vagas disponíveis e cadastrar seu currículo, você deve acessar o nosso site, na aba Contato – Trabalhe Conosco",
