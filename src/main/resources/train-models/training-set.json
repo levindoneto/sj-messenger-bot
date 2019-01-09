@@ -13948,7 +13948,15 @@
     {
       "tag": "DENUNCIA",
       "patterns": [
+        "indelicadezas",
         "ouvidoria",
+        "ladrões",
+        "ladra",
+        "ladrão",
+        "roubo",
+        "roubar",
+        "roubaram",
+        "segurança",
         "reclamar",
         "reclamacao",
         "reclamaçao",
