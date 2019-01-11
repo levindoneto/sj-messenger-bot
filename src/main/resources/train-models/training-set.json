@@ -9977,7 +9977,12 @@
         "EXPANGEL GEL",
         "ALERGOSAN",
         "S. DEXTRAN",
-        "SOL.",
+        "SOL. P/DIÁLISE PERIT.",
+        "SOL. GLICO-FISIOLOGICO",
+        "SOL. DE MANITOL",
+        "SOL. ELET. BALANCEADA",
+        "SOL. METRONIDAZOL",
+        "SOL. CLOR. DE POTÁSSIO",
         "RIBAV",
         "RESCOLD",
         "WELLCID",
@@ -13952,15 +13957,6 @@
         "reclamassão",
         "reclamassao",
         "reclamasao",
-        "indelicadezas",
-        "ouvidoria",
-        "ladrões",
-        "ladra",
-        "ladrão",
-        "roubo",
-        "roubar",
-        "roubaram",
-        "segurança",
         "vergonha",
         "palhaçada",
         "providencia",
@@ -14064,6 +14060,10 @@
         ]
       }
     }
+
+    
+    
+    
   ],
   "globalFallback": {
     "minimumScoreToFallback": 0.10,
