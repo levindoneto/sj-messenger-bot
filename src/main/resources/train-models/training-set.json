@@ -73,6 +73,56 @@
       }
     },
     {
+      "tag": "PONTUACAO",
+      "patterns": [
+        "?",
+        ",",
+        ".",
+        ";",
+        "/",
+        "~",
+        "]",
+        "´",
+        "[",
+        "<",
+        ">",
+        ":",
+        "^",
+        "}",
+        "`",
+        "+",
+        "-",
+        "*",
+        "/",
+        "(",
+        ")",
+        "&",
+        "¨",
+        "%",
+        "$",
+        "#",
+        "@",
+        "!",
+        "'",
+        "\"",
+        "\\",
+        "|",
+        "=",
+        "_"
+      ],
+      "responses": [
+        ""
+      ],
+      "context": {
+        "contextFilter": [
+          "#nocontext",
+          "customerServiceContext",
+          "symptomsContext",
+          "doctorContext"
+        ]
+      }
+    },
+    {
       "tag": "AGRADECIMENTO",
       "patterns": [
         "obrigado",
