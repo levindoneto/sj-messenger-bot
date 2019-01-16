@@ -14116,7 +14116,7 @@
     }
   ],
   "globalFallback": {
-    "minimumScoreToFallback": 0.10,
+    "minimumScoreToFallback": 0.20,
     "responses": [
       "Desculpe, não entendi o que você disse",
       "Desculpe, pode tentar novamente, por favor?! 😅",
