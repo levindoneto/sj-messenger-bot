@@ -22,9 +22,13 @@ build_and_test:
  artifacts:
   untracked: true
  script:
+   - chmod +x ./gradlew
    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/sogroup/intention-core.git
-   - cd ./intention-core && ./gradlew publish && cd ../
+   - cd ./intention-core 
+   - chmod +x ./gradlew
+   - ./gradlew publish && cd ../
    - ./gradlew clean build
+
  tags:
    - test
 
